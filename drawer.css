@@ -1,0 +1,39 @@
+.drawer {
+  width: 280px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -280px;
+  background-color: #FFF;
+}
+.drawer-handle {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: blue;
+}
+.drawer.opened {
+  transition: all 0.3s ease !important;
+  -webkit-transition: all 0.3s ease !important;
+  -moz-transition: all 0.3s ease !important;
+}
+.drawer.closed {
+  transition: all 0.3s ease !important;
+  -webkit-transition: all 0.3s ease !important;
+  -moz-transition: all 0.3s ease !important;
+  /*
+  transform: translate3d(0, 0, 0) !important;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  -moz-transform: translate3d(0, 0, 0) !important;
+  */
+}
+.drawer-mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.0;
+  z-index: -1;
+}
